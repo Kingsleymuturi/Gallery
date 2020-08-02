@@ -14,6 +14,15 @@ def image_location(request, location):
     print(images)
     return render(request, 'photos/location.html', {'location_images': images})
 
+def image(request, image_id):
+    try:
+        image = Image.objects.get(id=image_id)
+        print(image.category.id)
+    except ObjectDoesNotExist:
+        message = "Image does not exist or may have been deleted!"
+        return render(request, 'image.html', {"message":message})
+    return render(request, 'copy.html', {"image":image})
+
 
 def search_results(request):
     if 'imagesearch' in request.GET and request.GET["imagesearch"]:

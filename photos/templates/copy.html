@@ -1,27 +1,12 @@
 {% extends 'layouts.html' %}
 
 {% block content %}
-
 <div class="container-fluid boded" id="b" class="lol">
-    
-
-
-        <div class="row">
-            <div class="col-md-12"><span><strong style="font-size: 30px;color: white;">Your favorite Gallery!!</strong></span>
-            <span  style="float: right;margin-right: 0%;margin-top: 1%;color: white;">
-                Available locations:
-                {% for location in locations %}
-                    <a class="btn btn-outline-info btn-sm" id="btn"
-                       href="/location/{{location.name}}">{{location.name}}</a>
-                {%endfor%}
-             </span>
-            </div>
-        </div>
-        <hr style="background-color: aqua;">
-        <div class="card-columns">
-            {% for image in images %}
+    <div style="align-content: center; margin-left: 32%; margin-right: 3%; margin-top: 4rem;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center" >
             <div class="card" data-toggle="modal" data-target="#{{image.id}}" style="height: 320px;width: 350px;">
-                <img src="{{image.image.url}}" onclick="imgUrl('{{image.id}}')" alt="{{image.name}}" class="card-img" style="height: 320px;width: 350px;">
+                <img  src="{{image.image.url}}" onclick="imgUrl('{{image.id}}')" alt="{{image.name}}" class="card-img" style="height: 320px;width: 350px;">
             </div>
 
 
@@ -50,9 +35,7 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
-    
+    </div>
 </div>
-
 {% endblock %}
