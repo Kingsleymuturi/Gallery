@@ -1,8 +1,3 @@
-copyLink =(element) => {
-    document.getElementById(element).select();
-    document.execCommand("copy");
-           }
-
 function scrollTo() {
    const links = document.querySelectorAll('.scroll');
    links.forEach(each => (each.onclick = scrollAnchors));
