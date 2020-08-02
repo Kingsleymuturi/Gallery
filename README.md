@@ -56,9 +56,9 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request 
 
 ## Technologies Used
-During the creation of this webpage I used Python.
+During the creation of this webpage I used Python(Django).
 ## Support and contact details
 In case of anything find me here: kingsleymuturi9@gmail.com feel free to communicate any issue with the webpage
 
-### [LICENSE](https://github.com/Kingsleymuturi/Blogs/blob/master/LICENSE)
+### [LICENSE](https://github.com/Kingsleymuturi/Gallery/blob/master/LICENSE)
 Copyright (c) 2020 [Kingsley Muturi ](https://github.com/Kingsleymuturi)
