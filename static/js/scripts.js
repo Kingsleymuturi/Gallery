@@ -30,7 +30,8 @@ function imgUrl(){
     $("#copy-url").val(window.location.origin + "/image/" + image_id)
 }
 function copy(){
-    $("#copy-url").select()
+    var copyText = document.getElementById("copy-url");
+    copyText.select()
     document.execCommand('copy');
     alert("link has been copied to your clipboard!")
 }
