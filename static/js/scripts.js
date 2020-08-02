@@ -26,3 +26,11 @@ function scrollAnchors(e, respond = null) {
        }
    }, 3000);
 }
+function imgUrl(){
+    $("#copy-url").val(window.location.origin + "/image/" + image_id)
+}
+function copy(){
+    $("#copy-url").select()
+    document.execCommand('copy');
+    alert("link has been copied to your clipboard!")
+}

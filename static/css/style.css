@@ -51,6 +51,9 @@ hr{
 #imageheader{
     font-family: 'Yeseva One', cursive;
     }
+.nav-item:hover {
+    text-decoration: none;
+}
     
 .imgdesc{
     font-family: 'Vollkorn', serif;
