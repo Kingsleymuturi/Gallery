@@ -12,14 +12,14 @@ This project was generated with [Python](https://github.com/python) version 3.7.
 ## Description of functionality:
 This app enables users to view various photos along with their location having an option to view photos from various categories.
 ## Access
-* Click this link to access the web app https://kingsley-blogs.herokuapp.com/
+* Click this link to access the web app https://kings-gallery.herokuapp.com/
 
 ## How to run the application locally
 To get the code..
 
 1. Cloning the repository:
   ```bash
-  git clone https://github.com/Kingsleymuturi/Blogs.git
+  git clone https://github.com/Kingsleymuturi/Gallery.git
   ```
 2. Move to the folder and install requirements
   ```bash
