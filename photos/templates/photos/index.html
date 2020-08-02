@@ -36,17 +36,15 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img onclick="imgUrl()" src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
+                            <img onclick="imgUrl('{{image.id}}')" src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                             <p class="imgdesc text-center">{{image.description}}</p>
                             <span class="btn btn-sm btn-outline-success">{{image.category}}</span> <a
                                 href="/location/{{image.location}}" class="btn btn-sm btn-outline-info">{{image.location}}</a>
                             <div class="btn btn-sm btn-outline-warning" onclick="copy()">
-                                <a class="btn btn-sm btn-outline-warning">Copy Image</a>
+                                <a>Copy Image</a>
                             </div>
                             <input name="" id="copy-url"style="position:relative;left:15000px; height: 1px;">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close
+                            <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal" style="float: right;">Close
                             </button>
                         </div>
                     </div>

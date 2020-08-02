@@ -26,12 +26,11 @@ function scrollAnchors(e, respond = null) {
        }
    }, 3000);
 }
-function imgUrl(){
+function imgUrl(image_id){
     $("#copy-url").val(window.location.origin + "/image/" + image_id)
 }
 function copy(){
-    var copyText = document.getElementById("copy-url");
-    copyText.select()
+    $("#copy-url").select()
     document.execCommand('copy');
     alert("link has been copied to your clipboard!")
 }
