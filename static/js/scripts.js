@@ -22,7 +22,7 @@ function scrollAnchors(e, respond = null) {
    }, 3000);
 }
 function imgUrl(image_id){
-    $("#copy-url").val(window.location.origin + "/image/" + image_id)
+    $("#copy-url").val(window.location.origin + "/images/" + image_id)
 }
 function copy(){
     $("#copy-url").select()
