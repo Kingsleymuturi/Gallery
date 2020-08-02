@@ -23,13 +23,13 @@ To get the code..
   ```
 2. Move to the folder and install requirements
   ```bash
-  cd Blogs
+  cd Gallery
   pip install -r requirements.txt
   ```
 3. Exporting Configurations
   ```bash
-  export MAIL_USERNAME = 'Enter your email'
-  export MAIL_PASSWORD = 'Enter your password'
+  export DB_USER = 'Enter your username'
+  export DB_PASSWORD = 'Enter your password'
   export SECRET_KEY='Enter your secret key here'
   export DATABASE_URL='Entey your database url' use db upgrade to update your database
   (windows) use "set instead of export"
@@ -38,10 +38,10 @@ To get the code..
   ```bash
   python3 manage.py runserver
   ```
-Open the application on your browser `127.0.0.1:5000`.
+Open the application on your browser `127.0.0.1:8000`.
 
 ## Known Bugs
-There are no known bugs yet.
+Copy function only works on the first picture.
 ### Development
 Want to contribute? Great!
 
